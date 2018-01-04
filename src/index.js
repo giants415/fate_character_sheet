@@ -4,6 +4,9 @@ import ReactDOM from 'react-dom';
 import CharacterInfo from './components/character_info';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+  }
 
   render() {
     return(
