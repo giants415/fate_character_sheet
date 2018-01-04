@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 
-class CharacterInfo extends Component {
+import Name from './name';
 
+class CharacterInfo extends Component {
   render() {
     return(
       <div>
-        <h1>Name</h1>
+        <Name />
         <h1>Description</h1>
         <h1>Refresh</h1>
       </div>
