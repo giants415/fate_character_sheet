@@ -9,7 +9,14 @@ const characterList = [
     characterSheet: {
       name: 'garfinkle',
       description: 'a cool guy with a disposition',
-      refresh: 3
+      refresh: 3,
+      aspectList: {
+        1: 'aspect 1',
+        2: 'aspect 2',
+        3: 'aspect 3',
+        4: 'aspect 4',
+        5: 'aspect 5',
+      }
     }
   }
 ]
