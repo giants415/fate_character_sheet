@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import CharacterInfo from './components/character_info';
 import AspectList from './components/aspect_list';
+import SkillList from './components/skill_list';
 
 const characterList = [
   {
@@ -34,6 +35,7 @@ class App extends Component {
       <div>
         <CharacterInfo myChar={this.state.characterSheet}/>
         <AspectList myAspect={this.state.characterSheet.aspectList}/>
+        <SkillList />
       </div>
     )
   }
