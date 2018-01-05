@@ -1,7 +1,6 @@
 import React from 'react';
 
 const AspectList = ({myAspect}) => {
-  console.log(myAspect);
   return (
     <div>
       <p>{myAspect[0]}</p>
