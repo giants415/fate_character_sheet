@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 
 import Name from './name';
 
-const CharacterInfo = (props) => {
+const CharacterInfo = ({myChar}) => {
   return (
     <div>
-      <h1>Name: {props.myChar.name}</h1>
-      <h4>Description: {props.myChar.description}</h4>
-      <h4>Refresh: {props.myChar.refresh}</h4>
+      <h1>Name: {myChar.name}</h1>
+      <h4>Description: {myChar.description}</h4>
+      <h4>Refresh: {myChar.refresh}</h4>
     </div>
   )
 };
