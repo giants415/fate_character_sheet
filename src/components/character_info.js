@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import Name from './name';
-
 const CharacterInfo = ({myChar}) => {
   return (
     <div>
