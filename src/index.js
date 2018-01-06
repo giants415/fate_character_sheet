@@ -12,13 +12,7 @@ const characterList = [
       name: 'garfinkle',
       description: 'a cool guy with a disposition',
       refresh: 3,
-      aspectList: {
-        1: 'aspect 1',
-        2: 'aspect 2',
-        3: 'aspect 3',
-        4: 'aspect 4',
-        5: 'aspect 5',
-      },
+      aspectList: ['aspect 1', 'aspect 2','aspect 3','aspect 4','aspect 5'],
       skillList: {
         superb: ['superb 1', 'superb 2', 'superb 3', 'superb 4', 'superb 5'],
         great: ['great 1', 'great 2', 'great 3', 'great 4', 'great 5'],
