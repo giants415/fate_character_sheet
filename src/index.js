@@ -19,7 +19,11 @@ const characterList = [
         good: ['good 1', 'good 2', 'good 3', 'good 4', 'good 5'],
         fair: ['fair 1', 'fair 2', 'fair 3', 'fair 4', 'fair 5'],
         average: ['average 1', 'average 2', 'average 3', 'average 4', 'average 5'],
-      }
+      },
+      stuntList: [
+        'fast reload - when behind cover, you can reload and shoot using only 1 action',
+        'dangerous roads ahead - when driving or riding in a vehicle on dangerous terrian, add +1 to rolls'
+      ]
     }
   }
 ]
