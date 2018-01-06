@@ -1,12 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 
-class SkillList extends Component {
-  render() {
-    return (
-      <div></div>
-    )
-  }
+const SkillList = () => {
+  return (
+    <div>
+
+    </div>
+  );
 }
 
 export default SkillList;
