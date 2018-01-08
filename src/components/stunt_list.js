@@ -4,8 +4,8 @@ const StuntList = ({myStunts}) => {
   return (
     <div>
       <h4>Stunts</h4>
-      <p>{myStunt[0]}</p>
-      <p>{myStunt[1]}</p>
+      <p>{myStunts[0]}</p>
+      <p>{myStunts[1]}</p>
     </div>
   )
 };
