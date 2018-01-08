@@ -41,7 +41,7 @@ class App extends Component {
     return(
       <div>
         <CharacterInfo myChar={this.state.characterSheet}/>
-        <AspectList myAspect={this.state.characterSheet.aspectList}/>
+        <AspectList myAspects={this.state.characterSheet.aspectList}/>
         <SkillList mySkills={this.state.characterSheet.skillList}/>
         <StuntList myStunts={this.state.characterSheet.stuntList}/>
       </div>
