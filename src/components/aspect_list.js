@@ -1,14 +1,14 @@
 import React from 'react';
 
-const AspectList = ({myAspect}) => {
+const AspectList = ({myAspects}) => {
   return (
     <div>
       <h4>Aspects</h4>
-      <p>{myAspect[0]}</p>
-      <p>{myAspect[1]}</p>
-      <p>{myAspect[2]}</p>
-      <p>{myAspect[3]}</p>
-      <p>{myAspect[4]}</p>
+      <p>{myAspects[0]}</p>
+      <p>{myAspects[1]}</p>
+      <p>{myAspects[2]}</p>
+      <p>{myAspects[3]}</p>
+      <p>{myAspects[4]}</p>
     </div>
   )
 };
