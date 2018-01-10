@@ -6,6 +6,7 @@ import AspectList from './components/aspect_list';
 import SkillList from './components/skill_list';
 import StuntList from './components/stunt_list';
 import StressList from './components/stress_list';
+import ConsequenceList from './components/consequence_list';
 
 
 const characterList = [
@@ -55,6 +56,7 @@ class App extends Component {
         <SkillList mySkills={this.state.characterSheet.skillList}/>
         <StuntList myStunts={this.state.characterSheet.stuntList}/>
         <StressList myStress={this.state.characterSheet.stressList}/>
+        <ConsequenceList myConsequences={this.state.characterSheet.consequenceList}/>
       </div>
     )
   }
