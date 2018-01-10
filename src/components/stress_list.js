@@ -1,11 +1,12 @@
 import React from 'react';
 
+import MentalStressItems from './mental_item';
+
 const StressList = ({myStress}) => {
   return (
     <div>
       <h4>Stress Categories</h4>
-      <PhysicalStress physical={myStress.physical}/>
-      <MentalStress mental={myStress.mental}/>
+      <MentalStressItems mental={myStress.mental}/>
     </div>
   )
 };
