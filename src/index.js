@@ -54,6 +54,7 @@ class App extends Component {
         <AspectList myAspects={this.state.characterSheet.aspectList}/>
         <SkillList mySkills={this.state.characterSheet.skillList}/>
         <StuntList myStunts={this.state.characterSheet.stuntList}/>
+        <StressList myStress={this.state.characterList.stressList}/>
       </div>
     )
   }
