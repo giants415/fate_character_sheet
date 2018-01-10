@@ -26,6 +26,10 @@ const characterList = [
         'fast reload - when behind cover, you can reload and shoot using only 1 action',
         'dangerous roads ahead - when driving or riding in a vehicle on dangerous terrian, add +1 to rolls'
       ],
+      stressList: {
+        physical: [],
+        mental: []
+      },
       consequenceList: {
         mild: '',
         moderate: '',
