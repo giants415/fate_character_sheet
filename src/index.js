@@ -32,9 +32,9 @@ const characterList = [
         mental: ['X','X']
       },
       consequenceList: {
-        mild: '',
-        moderate: '',
-        severe: ''
+        mild: 'scrapes',
+        moderate: 'hairline fracture - leg',
+        severe: 'open leg wound'
       }
     }
   }
