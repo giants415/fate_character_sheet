@@ -1,9 +1,9 @@
 import React from 'react';
 
 const MentalStressItems = ({mental}) => {
-  console.log(mental);
   return (
     <div>
+      <p>Mental Stress</p>
       {mental[0]}
       {mental[1]}
     </div>
