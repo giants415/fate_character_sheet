@@ -1,7 +1,7 @@
 import React from 'react';
 
-import MentalStressItems from './mental_item';
-import PhysicalStressItems from './physical_item';
+import MentalStressItems from './stress_components/mental_item';
+import PhysicalStressItems from './stress_components/physical_item';
 
 const StressList = ({myStress}) => {
   return (
