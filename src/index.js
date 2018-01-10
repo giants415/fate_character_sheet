@@ -28,8 +28,8 @@ const characterList = [
         'dangerous roads ahead - when driving or riding in a vehicle on dangerous terrian, add +1 to rolls'
       ],
       stressList: {
-        physical: [],
-        mental: []
+        physical: ['X','X'],
+        mental: ['X','X']
       },
       consequenceList: {
         mild: '',
@@ -54,7 +54,7 @@ class App extends Component {
         <AspectList myAspects={this.state.characterSheet.aspectList}/>
         <SkillList mySkills={this.state.characterSheet.skillList}/>
         <StuntList myStunts={this.state.characterSheet.stuntList}/>
-        <StressList myStress={this.state.characterList.stressList}/>
+        <StressList myStress={this.state.characterSheet.stressList}/>
       </div>
     )
   }
