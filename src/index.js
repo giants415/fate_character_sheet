@@ -5,6 +5,7 @@ import CharacterInfo from './components/character_info';
 import AspectList from './components/aspect_list';
 import SkillList from './components/skill_list';
 import StuntList from './components/stunt_list';
+import StressList from './components/stress_list';
 
 
 const characterList = [
