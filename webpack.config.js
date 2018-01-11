@@ -9,19 +9,29 @@ module.exports = {
         publicPath: '/'
     },
     module: {
-        loaders: [
-            {
-                test: /\.js$/,
-                include: path.resolve(__dirname, 'src'),
-                loader: 'babel-loader',
-                query: {
-                    presets: ['react', 'env']
-                }
-            },
-            {
-                test: /\.scss$/,
-                loader: 'style-loader!sass-loader'
+      loaders: [
+        {
+            test: /\.js$/,
+            include: path.resolve(__dirname, 'src'),
+            loader: 'babel-loader',
+            query: {
+                presets: ['react', 'env']
             }
-        ]
+        },
+        {
+          test: /\.scss$/,
+          use: extractSass.extract({
+            use: [{
+                loader: "css-loader"
+            }, {
+                loader: "sass-loader"
+            }],
+            fallback: "style-loader"
+          })
+        }
+      ]
     }
+    plugins: [
+      extractSass
+    ]
 };
