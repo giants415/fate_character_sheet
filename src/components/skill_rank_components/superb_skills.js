@@ -8,7 +8,7 @@ const ulStyle = {
 const liStyle = {
   display: 'inline',
   margin: '10px'
-}
+};
 
 const SuperbSkills = ({superbSkills}) => {
   return (
