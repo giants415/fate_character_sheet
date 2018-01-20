@@ -13,8 +13,6 @@ class App extends Component {
   constructor(props){
     super(props);
 
-    console.log({Character_0});
-
     this.state = Character_0;
   }
 
