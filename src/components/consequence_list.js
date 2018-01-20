@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ConsequenceList = ({myConsequences}) => {
-  console.log(myConsequences);
   return (
     <div>
       <h4>Consequences</h4>
