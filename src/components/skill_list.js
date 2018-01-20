@@ -12,7 +12,7 @@ import AverageSkills from './skill_rank_components/average_skills';
 
 const SkillList = ({mySkills}) => {
   return (
-    <div>
+    <div className="col-lg-6">
       <SuperbSkills superbSkills={mySkills.superb}/>
       <GreatSkills greatSkills={mySkills.great}/>
       <GoodSkills goodSkills={mySkills.good}/>
