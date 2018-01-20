@@ -2,7 +2,7 @@ import React from 'react';
 
 const AspectList = ({myAspects}) => {
   return (
-    <div>
+    <div className="col-lg-6">
       <h4>Aspects</h4>
       <p>{myAspects[0]}</p>
       <p>{myAspects[1]}</p>
