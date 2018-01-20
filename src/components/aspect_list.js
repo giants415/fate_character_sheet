@@ -1,8 +1,13 @@
 import React from 'react';
 
+const tableStyle = {
+  maxWidth: '50%',
+  border: '1px black solid'
+};
+
 const AspectList = ({myAspects}) => {
   return (
-    <table className="col-lg-6 table table-hover">
+    <table style={tableStyle} className="col-lg-6 table table-hover">
       <thead><tr><th>Aspects</th></tr></thead>
       <tbody>
         <tr><td>{myAspects[0]}</td></tr>
