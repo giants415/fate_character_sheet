@@ -18,7 +18,7 @@ class App extends Component {
 
   render() {
     return(
-      <div>
+      <div className="container-fluid">
         <CharacterInfo myChar={this.state.characterSheet}/>
         <AspectList myAspects={this.state.characterSheet.aspectList}/>
         <SkillList mySkills={this.state.characterSheet.skillList}/>
@@ -31,4 +31,4 @@ class App extends Component {
 }
 
 
-ReactDOM.render(<App />, document.querySelector('.container'));
+ReactDOM.render(<App />, document.querySelector('.target'));
