@@ -4,11 +4,13 @@ const SuperbSkills = ({superbSkills}) => {
   return (
     <div>
       <h4>Superb</h4>
-      <p>{superbSkills[0]}</p>
-      <p>{superbSkills[1]}</p>
-      <p>{superbSkills[2]}</p>
-      <p>{superbSkills[3]}</p>
-      <p>{superbSkills[4]}</p>
+      <ul>
+        <li>{superbSkills[0]}</li>
+        <li>{superbSkills[1]}</li>
+        <li>{superbSkills[2]}</li>
+        <li>{superbSkills[3]}</li>
+        <li>{superbSkills[4]}</li>
+      </ul>
     </div>
   );
 }
