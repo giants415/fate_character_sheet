@@ -19,12 +19,25 @@ class App extends Component {
   render() {
     return(
       <div className="container-fluid">
-        <CharacterInfo myChar={this.state.characterSheet}/>
-        <AspectList myAspects={this.state.characterSheet.aspectList}/>
-        <SkillList mySkills={this.state.characterSheet.skillList}/>
-        <StuntList myStunts={this.state.characterSheet.stuntList}/>
-        <StressList myStress={this.state.characterSheet.stressList}/>
-        <ConsequenceList myConsequences={this.state.characterSheet.consequenceList}/>
+        
+        <div className="row">
+          <CharacterInfo myChar={this.state.characterSheet}/>
+        </div>
+
+        <div className="row">
+          <AspectList myAspects={this.state.characterSheet.aspectList}/>
+          <SkillList mySkills={this.state.characterSheet.skillList}/>
+        </div>
+
+        <div className="row">
+          <StuntList myStunts={this.state.characterSheet.stuntList}/>
+        </div>
+
+        <div className="row">
+          <StressList myStress={this.state.characterSheet.stressList}/>
+          <ConsequenceList myConsequences={this.state.characterSheet.consequenceList}/>
+        </div>
+
       </div>
     )
   }
