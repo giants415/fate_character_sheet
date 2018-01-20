@@ -5,9 +5,9 @@ import React from 'react';
 const CharacterInfo = ({myChar}) => {
   return (
     <div>
-      <h1>Name: {myChar.name}</h1>
-      <h4>Description: {myChar.description}</h4>
-      <h4>Refresh: {myChar.refresh}</h4>
+      <h1 className="col-lg-4">Name: {myChar.name}</h1>
+      <h4 className="col-lg-4">Description: {myChar.description}</h4>
+      <h4 className="col-lg-4">Refresh: {myChar.refresh}</h4>
     </div>
   )
 };
