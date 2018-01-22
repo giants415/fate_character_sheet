@@ -2,7 +2,7 @@ import React from 'react';
 
 const ConsequenceList = ({myConsequences}) => {
   return (
-    <div>
+    <div className="col-sm-4">
       <h4>Consequences</h4>
       <p>Mild: {myConsequences.mild}</p>
       <p>Moderate: {myConsequences.moderate}</p>
