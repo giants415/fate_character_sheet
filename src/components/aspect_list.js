@@ -7,7 +7,7 @@ const tableStyle = {
 
 const AspectList = ({myAspects}) => {
   return (
-    <table style={tableStyle} className="col-lg-6 table table-hover">
+    <table style={tableStyle} className="col-lg-6 table">
       <thead><tr><th>Aspects</th></tr></thead>
       <tbody>
         <tr><td>{myAspects[0]}</td></tr>
