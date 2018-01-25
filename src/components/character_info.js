@@ -29,6 +29,9 @@ class CharacterInfo extends Component {
     )
   }
 
+  onInputChange(term) {
+    this.setState({term});
+  }
 };
 
 export default CharacterInfo;
