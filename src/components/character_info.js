@@ -1,7 +1,5 @@
 import React from 'react';
 
-// import '../../style/character_style.sass';
-
 const CharacterInfo = ({myChar}) => {
   return (
     <div>
