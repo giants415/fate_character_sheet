@@ -21,7 +21,7 @@ class App extends Component {
       <div>
 
         <div className="row">
-          <CharacterInfo myChar={this.state.characterSheet}/>
+          <CharacterInfo />
         </div>
 
         <div className="row">
