@@ -12,7 +12,8 @@ import React, { Component } from 'react';
 const lockStyle = {
   width: '24px',
   height: '24px',
-  border: '1px black solid'
+  border: '1px black solid',
+  display: 'inline-block'
 }
 
 class TextLock extends Component {
