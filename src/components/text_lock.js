@@ -7,7 +7,7 @@
 // https://stackoverflow.com/questions/9649877/how-to-disable-enable-input-field-on-click-with-jquery
 // probably the best source for a simple button
 
-import React from 'react';
+import React, { Component } from 'react';
 
 const lockStyle = {
   width: '24px',
