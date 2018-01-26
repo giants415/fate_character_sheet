@@ -30,6 +30,11 @@ class TextLock extends Component {
     )
   }
 
+  toggleLock() {
+    if (this.state === false) {
+
+    }
+  }
 };
 
 export default TextLock;
