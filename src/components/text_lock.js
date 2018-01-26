@@ -18,7 +18,8 @@ const lockStyle = {
 class TextLock extends Component {
   render() {
     return(
-
+      <div style={lockStyle}>
+      </div>
     )
   }
 };
