@@ -9,10 +9,16 @@
 
 import React from 'react';
 
+const lockStyle = {
+  width: '24px',
+  height: '24px',
+  border: '1px black solid'
+}
+
 class TextLock extends Component {
   render() {
     return(
-      
+
     )
   }
 };
