@@ -17,12 +17,19 @@ const lockStyle = {
 }
 
 class TextLock extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { lock: false }
+  }
+
   render() {
     return(
       <div style={lockStyle}>
       </div>
     )
   }
+
 };
 
 export default TextLock;
