@@ -23,3 +23,5 @@ class TextLock extends Component {
     )
   }
 };
+
+export default TextLock;
