@@ -6,7 +6,11 @@ class CharacterInfo extends Component {
   constructor(props){
     super(props);
 
-    this.state = { term: '' };
+    this.state = {
+      name: '',
+      description: '',
+      refresh: ''
+     };
   }
 
   render() {
