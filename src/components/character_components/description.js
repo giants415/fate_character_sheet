@@ -9,7 +9,7 @@ class Description extends Component {
   render() {
     return (
       <div className="col-sm-8">
-        <label> Name
+        <label> Description
           <input
             className="col-6"
             value={this.state.description}
