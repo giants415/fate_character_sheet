@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import Character_0 from './Character_0';
-import CharacterInfo from './components/character_info';
+import Name from './components/name';
 import AspectList from './components/aspect_list';
 import SkillList from './components/skill_list';
 import StuntList from './components/stunt_list';
@@ -21,7 +21,7 @@ class App extends Component {
       <div>
 
         <div className="row">
-          <CharacterInfo />
+          <Name />
         </div>
 
         <div className="row">
