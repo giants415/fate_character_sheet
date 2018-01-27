@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 
-import Character_0 from '../Character_0';
-
 class CharacterInfo extends Component {
   constructor(props){
     super(props);
-
     this.state = { name: '' };
+  }
 
   render() {
     return (
@@ -22,9 +20,9 @@ class CharacterInfo extends Component {
     );
   }
 
-  onInputChange(namw) {
+  onInputChange(name) {
     this.setState({name});
   }
-};
+}
 
 export default CharacterInfo;
