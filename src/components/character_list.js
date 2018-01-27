@@ -7,7 +7,7 @@ import Refresh from './character_components/refresh';
 export default class CharacterList extends Component {
   render() {
     return (
-      <div>
+      <div className="row">
         <Name />
         <Description />
         <Refresh />
