@@ -9,7 +9,7 @@ class Refresh extends Component {
   render() {
     return (
       <div className="col-sm-8">
-        <label> Name
+        <label> Refresh
           <input
             className="col-6"
             value={this.state.refresh}
