@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import Name from './name';
-import Description from './description';
-import Refresh from './refresh';
+import Name from './character_components/name';
+import Description from './character_components/description';
+import Refresh from './character_components/refresh';
 
 export default class CharacterList extends Component {
   render() {
