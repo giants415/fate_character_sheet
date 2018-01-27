@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-class Refresh extends Component {
+class Name extends Component {
   constructor(props){
     super(props);
-    this.state = { refresh: 0 };
+    this.state = { name: '' };
   }
 
   render() {
@@ -12,7 +12,7 @@ class Refresh extends Component {
         <label> Name
           <input
             className="col-6"
-            value={this.state.refresh}
+            value={this.state.name}
             onChange={event => this.onInputChange(event.target.value)}
             />
         </label>
@@ -20,9 +20,9 @@ class Refresh extends Component {
     );
   }
 
-  onInputChange(refresh) {
-    this.setState({refresh});
+  onInputChange(name) {
+    this.setState({name});
   }
 }
 
-export default Refresh;
+export default Name;
