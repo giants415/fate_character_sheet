@@ -8,8 +8,10 @@ export default class CharacterList extends Component {
   render() {
     return (
       <div className="row">
-        <Name />
-        <Description />
+        <div className='col-sm-8'>
+          <Name />
+          <Description />
+        </div>
         <Refresh />
       </div>
     );
