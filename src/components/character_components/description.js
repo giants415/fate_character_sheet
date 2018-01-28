@@ -11,7 +11,6 @@ class Description extends Component {
       <div className="col-sm-8">
         <label> Description
           <input
-            className="col-6"
             value={this.state.description}
             onChange={event => this.onInputChange(event.target.value)}
             />

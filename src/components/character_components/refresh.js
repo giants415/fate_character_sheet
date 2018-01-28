@@ -11,7 +11,6 @@ class Refresh extends Component {
       <div className="col-sm-8">
         <label> Refresh
           <input
-            className="col-6"
             value={this.state.refresh}
             onChange={event => this.onInputChange(event.target.value)}
             />

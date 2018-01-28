@@ -11,7 +11,6 @@ class Name extends Component {
       <div className="col-sm-8">
         <label> Name
           <input
-            className="col-6"
             value={this.state.name}
             onChange={event => this.onInputChange(event.target.value)}
             />
