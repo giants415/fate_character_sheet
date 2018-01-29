@@ -8,7 +8,7 @@ class Refresh extends Component {
 
   render() {
     return (
-      <div className="col-sm-8">
+      <div>
         <input
           value={this.state.refresh}
           onChange={event => this.onInputChange(event.target.value)}
