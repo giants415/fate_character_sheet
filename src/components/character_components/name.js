@@ -15,7 +15,7 @@ class Name extends Component {
       <div className="col-sm-8">
         <input
           style={nameStyle}
-          placeholder='Choose a name'
+          placeholder='Choose your character&#39;s name'
           value={this.state.name}
           onChange={event => this.onInputChange(event.target.value)}
           />
