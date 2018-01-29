@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
+const nameStyle = {
+  width: '300px'
+}
+
 class Name extends Component {
   constructor(props){
     super(props);
@@ -9,12 +13,12 @@ class Name extends Component {
   render() {
     return (
       <div className="col-sm-8">
-        <label> Name
-          <input
-            value={this.state.name}
-            onChange={event => this.onInputChange(event.target.value)}
-            />
-        </label>
+        <input
+          style={nameStyle}
+          placeholder='Choose a name'
+          value={this.state.name}
+          onChange={event => this.onInputChange(event.target.value)}
+          />
       </div>
     );
   }
