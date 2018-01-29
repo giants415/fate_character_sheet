@@ -9,6 +9,10 @@ import StuntList from './components/stunt_list';
 import StressList from './components/stress_list';
 import ConsequenceList from './components/consequence_list';
 
+const sheetStyle = {
+  border: '2px solid black'
+}
+
 class App extends Component {
   constructor(props){
     super(props);
@@ -18,7 +22,7 @@ class App extends Component {
 
   render() {
     return(
-      <div>
+      <div style={sheetStyle}>
           <CharacterList />
 
         <div className="row">
