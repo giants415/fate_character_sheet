@@ -14,14 +14,13 @@ class Description extends Component {
   render() {
     return (
       <div className="col-sm-8">
-        <label> Description
-          <textarea
-            type='text'
-            style={textArea}
-            value={this.state.description}
-            onChange={event => this.onInputChange(event.target.value)}
-            />
-        </label>
+        <textarea
+          type='text'
+          style={textArea}
+          placeholder='Describe your chracter'
+          value={this.state.description}
+          onChange={event => this.onInputChange(event.target.value)}
+          />
       </div>
     );
   }
