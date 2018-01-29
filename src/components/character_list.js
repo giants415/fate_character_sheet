@@ -12,7 +12,9 @@ export default class CharacterList extends Component {
           <Name />
           <Description />
         </div>
-        <Refresh />
+        <div className='col-sm-8'>
+          <Refresh />
+        </div>
       </div>
     );
   }
