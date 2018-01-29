@@ -12,7 +12,7 @@ class Name extends Component {
 
   render() {
     return (
-      <div className="col-sm-8">
+      <div className="col-8">
         <input
           style={nameStyle}
           placeholder='Choose your character&#39;s name'
