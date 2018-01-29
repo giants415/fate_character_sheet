@@ -3,18 +3,16 @@ import React, { Component } from 'react';
 class Refresh extends Component {
   constructor(props){
     super(props);
-    this.state = { refresh: 0 };
+    this.state = { refresh: 3 };
   }
 
   render() {
     return (
       <div className="col-sm-8">
-        <label> Refresh
-          <input
-            value={this.state.refresh}
-            onChange={event => this.onInputChange(event.target.value)}
-            />
-        </label>
+        <input
+          value={this.state.refresh}
+          onChange={event => this.onInputChange(event.target.value)}
+          />
       </div>
     );
   }
