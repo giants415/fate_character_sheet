@@ -10,7 +10,8 @@ import StressList from './components/stress_list';
 import ConsequenceList from './components/consequence_list';
 
 const sheetStyle = {
-  border: '2px solid black'
+  border: '2px solid black',
+  padding: '20px'
 }
 
 class App extends Component {
