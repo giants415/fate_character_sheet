@@ -14,6 +14,10 @@ const sheetStyle = {
   padding: '20px'
 }
 
+const aspectSkillStyle = {
+  marginTop: '20px'
+}
+
 class App extends Component {
   constructor(props){
     super(props);
@@ -26,7 +30,7 @@ class App extends Component {
       <div style={sheetStyle}>
         <CharacterList />
 
-        <div className="row">
+        <div className="row" style={aspectSkillStyle}>
           <AspectList myAspects={this.state.characterSheet.aspectList}/>
           <SkillList mySkills={this.state.characterSheet.skillList}/>
         </div>
