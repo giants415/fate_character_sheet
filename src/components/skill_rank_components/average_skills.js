@@ -7,13 +7,17 @@ const ulStyle = {
 
 const liStyle = {
   display: 'inline',
-  margin: '10px'
+  margin: '10px 10px 10px 0px'
+};
+
+const pStyle = {
+  margin: '0px'
 };
 
 const AverageSkills = ({AverageSkills}) => {
   return (
     <div>
-      <h4>Average</h4>
+      <p style={pStyle}>Average ( +1 )</p>
       <ul style={ulStyle}>
         <li style={liStyle}>{AverageSkills[0]}</li>
         <li style={liStyle}>{AverageSkills[1]}</li>

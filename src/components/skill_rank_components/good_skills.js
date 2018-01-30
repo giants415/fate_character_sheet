@@ -7,13 +7,17 @@ const ulStyle = {
 
 const liStyle = {
   display: 'inline',
-  margin: '10px'
+  margin: '10px 10px 10px 0px'
+};
+
+const pStyle = {
+  margin: '0px'
 };
 
 const GoodSkills = ({goodSkills}) => {
   return (
     <div>
-      <h4>Good</h4>
+      <p style={pStyle}>Good ( +3 )</p>
       <ul style={ulStyle}>
         <li style={liStyle}>{goodSkills[0]}</li>
         <li style={liStyle}>{goodSkills[1]}</li>
