@@ -1,2 +1,4 @@
-FATE Core Character Sheet
+FATE Core RPG Character Sheet
 =========================
+Origin of concept
+----
