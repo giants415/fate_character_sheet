@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 const nameStyle = {
-  width: '300px'
+  width: '500px'
 }
 
 class Name extends Component {

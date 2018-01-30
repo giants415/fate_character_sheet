@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 const textArea = {
-  width: '300px',
+  width: '500px',
   height: '100px'
 }
 
