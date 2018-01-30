@@ -7,13 +7,17 @@ const ulStyle = {
 
 const liStyle = {
   display: 'inline',
-  margin: '10px'
+  margin: '10px 10px 10px 0px'
+};
+
+const pStyle = {
+  margin: '0px'
 };
 
 const SuperbSkills = ({superbSkills}) => {
   return (
     <div>
-      <h4>Superb</h4>
+      <p style={pStyle}>Superb ( +5 )</p>
       <ul style={ulStyle}>
         <li style={liStyle}>{superbSkills[0]}</li>
         <li style={liStyle}>{superbSkills[1]}</li>
