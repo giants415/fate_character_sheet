@@ -4,6 +4,10 @@ const nameStyle = {
   width: '500px'
 }
 
+const pStyle = {
+  margin: '0px'
+}
+
 class Name extends Component {
   constructor(props){
     super(props);
@@ -13,6 +17,7 @@ class Name extends Component {
   render() {
     return (
       <div className="col-8">
+        <p style={pStyle}>Name</p>
         <input
           style={nameStyle}
           placeholder='Choose your character&#39;s name'
