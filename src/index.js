@@ -6,6 +6,7 @@ import CharacterList from './components/character_list';
 import AspectList from './components/aspect_list';
 import SkillList from './components/skill_list';
 import StuntList from './components/stunt_list';
+import Notes from './components/notes';
 import StressList from './components/stress_list';
 import ConsequenceList from './components/consequence_list';
 
@@ -37,6 +38,7 @@ class App extends Component {
 
         <div className="row">
           <StuntList myStunts={this.state.characterSheet.stuntList}/>
+          <Notes />
         </div>
 
         <div className="row">
