@@ -23,7 +23,7 @@ class App extends Component {
   render() {
     return(
       <div style={sheetStyle}>
-          <CharacterList />
+        <CharacterList />
 
         <div className="row">
           <AspectList myAspects={this.state.characterSheet.aspectList}/>
