@@ -6,13 +6,14 @@ import GoodSkills from './skill_rank_components/good_skills';
 import FairSkills from './skill_rank_components/fair_skills';
 import AverageSkills from './skill_rank_components/average_skills';
 
-
-
-
+const pStyle = {
+  margin: '0px'
+};
 
 const SkillList = ({mySkills}) => {
   return (
     <div className="col-lg-6">
+      <p style={pStyle}>Skills</p>
       <SuperbSkills superbSkills={mySkills.superb}/>
       <GreatSkills greatSkills={mySkills.great}/>
       <GoodSkills goodSkills={mySkills.good}/>
