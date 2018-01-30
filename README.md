@@ -1,1 +1,2 @@
-#FATE Core Character Sheet
+FATE Core Character Sheet
+=========================
