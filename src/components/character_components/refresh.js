@@ -7,7 +7,7 @@ const refreshStyle = {
   fontSize: '90px'
 }
 
-const pStyle ={
+const pStyle = {
   margin: '0px',
   width: '136px',
   textAlign: 'center'
