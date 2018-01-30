@@ -9,6 +9,7 @@ export default class CharacterList extends Component {
     return (
       <div className="row">
         <div className='col-lg-9'>
+          <h3>Character</h3>
           <Name />
           <Description />
         </div>
