@@ -6,7 +6,7 @@ const textArea = {
 }
 
 const pStyle = {
-  margin: '0px 0px 0px 20px',
+  margin: '0px'
 }
 
 class Description extends Component {
