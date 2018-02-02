@@ -16,17 +16,6 @@ module.exports = {
         query: {
             presets: ['react', 'env']
         }
-      // },
-      // {
-      // test: /\.scss$/,
-      // include: [path.resolve(__dirname, 'src', 'style', 'scss')],
-      // use: [{
-      //     loader: "style-loader"
-      //   }, {
-      //     loader: "css-loader"
-      //   }, {
-      //     fallback: "style-loader"
-      //   }]
       }
     ]
   }
