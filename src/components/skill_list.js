@@ -10,6 +10,7 @@ const pStyle = {
   margin: '0px'
 };
 
+
 const SkillList = ({mySkills}) => {
   return (
     <div className="col-lg-6">
