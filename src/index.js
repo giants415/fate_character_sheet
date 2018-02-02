@@ -10,6 +10,8 @@ import Notes from './components/notes';
 import StressList from './components/stress_list';
 import ConsequenceList from './components/consequence_list';
 
+import { target } from './style.scss';
+
 const sheetStyle = {
   border: '2px solid black',
   padding: '20px'
