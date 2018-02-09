@@ -7,12 +7,6 @@ const refreshStyle = {
   fontSize: '90px'
 }
 
-const pStyle = {
-  margin: '0px',
-  width: '136px',
-  textAlign: 'center'
-}
-
 class Refresh extends Component {
   constructor(props){
     super(props);
@@ -22,7 +16,7 @@ class Refresh extends Component {
   render() {
     return (
       <div>
-        <p style={pStyle}>Refresh</p>
+        <p className='section_header'>Refresh</p>
         <input
           style={refreshStyle}
           value={this.state.refresh}
