@@ -5,10 +5,6 @@ const textArea = {
   height: '100px'
 }
 
-const pStyle = {
-  margin: '0px'
-}
-
 class Notes extends Component {
   constructor(props){
     super(props);
@@ -18,7 +14,7 @@ class Notes extends Component {
   render() {
     return (
       <div className="col-lg-6">
-        <p style={pStyle}>Notes</p>
+        <p>Notes</p>
         <textarea
           type='text'
           style={textArea}

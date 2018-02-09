@@ -10,14 +10,10 @@ const liStyle = {
   margin: '10px 10px 10px 0px'
 };
 
-const pStyle = {
-  margin: '0px'
-};
-
 const GreatSkills = ({greatSkills}) => {
   return (
     <div>
-      <p style={pStyle}>Great ( +4 )</p>
+      <p>Great ( +4 )</p>
       <ul style={ulStyle}>
         <li style={liStyle}>{greatSkills[0]}</li>
         <li style={liStyle}>{greatSkills[1]}</li>
