@@ -1,12 +1,5 @@
 import React, { Component } from 'react';
 
-const refreshStyle = {
-  height: '136px',
-  width: '136px',
-  textAlign: 'center',
-  fontSize: '90px'
-}
-
 class Refresh extends Component {
   constructor(props){
     super(props);
@@ -18,7 +11,7 @@ class Refresh extends Component {
       <div>
         <p className='section_header'>Refresh</p>
         <input
-          style={refreshStyle}
+          id='refresh_input'
           value={this.state.refresh}
           onChange={event => this.onInputChange(event.target.value)}
           />
