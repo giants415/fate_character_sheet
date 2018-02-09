@@ -12,10 +12,7 @@ import ConsequenceList from './components/consequence_list';
 
 import { target } from './style.scss';
 
-const sheetStyle = {
-  border: '2px solid black',
-  padding: '20px'
-}
+
 
 const aspectSkillStyle = {
   marginTop: '20px'
@@ -30,7 +27,7 @@ class App extends Component {
 
   render() {
     return(
-      <div style={sheetStyle}>
+      <div>
         <CharacterList />
 
         <div className="row" style={aspectSkillStyle}>
