@@ -13,11 +13,6 @@ import ConsequenceList from './components/consequence_list';
 import { target } from './style.scss';
 
 
-
-const aspectSkillStyle = {
-  marginTop: '20px'
-}
-
 class App extends Component {
   constructor(props){
     super(props);
@@ -30,7 +25,7 @@ class App extends Component {
       <div>
         <CharacterList />
 
-        <div className="row" style={aspectSkillStyle}>
+        <div className="row aspects_skills">
           <AspectList myAspects={this.state.characterSheet.aspectList}/>
           <SkillList mySkills={this.state.characterSheet.skillList}/>
         </div>
