@@ -31,6 +31,11 @@ ul {
 }
 
 .skill_list {
+  li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+  }
 }
 
 #refresh_input {
