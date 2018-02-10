@@ -1,13 +1,9 @@
 import React from 'react';
 
-const tableStyle = {
-  border: '1px black solid'
-};
-
 const AspectList = ({myAspects}) => {
   return (
     <div className="col-lg-6">
-      <table style={tableStyle} className="table">
+      <table className="table">
         <thead><tr><th>Aspects</th></tr></thead>
         <tbody>
           <tr><td>{myAspects[0]}</td></tr>
