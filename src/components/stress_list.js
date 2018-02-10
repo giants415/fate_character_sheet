@@ -6,7 +6,7 @@ import PhysicalStressItems from './stress_components/physical_item';
 const StressList = ({myStress}) => {
   return (
     <div className="col-sm-8">
-      <p>Stress Categories</p>
+      <h3>Stress Categories</h3>
       <MentalStressItems className="col-sm-8" mental={myStress.mental}/>
       <PhysicalStressItems className="col-sm-8" physical={myStress.physical}/>
     </div>

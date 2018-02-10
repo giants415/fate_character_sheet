@@ -14,7 +14,7 @@ class Notes extends Component {
   render() {
     return (
       <div className="col-lg-6">
-        <p>Notes</p>
+        <h3>Notes</h3>
         <textarea
           type='text'
           style={textArea}
