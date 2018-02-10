@@ -3,7 +3,7 @@ import React from 'react';
 const AspectList = ({myAspects}) => {
   return (
     <div className="col-lg-6">
-      <table className="table">
+      <table>
         <thead><tr><th>Aspects</th></tr></thead>
         <tbody>
           <tr><td>{myAspects[0]}</td></tr>
