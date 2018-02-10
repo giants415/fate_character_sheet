@@ -31,9 +31,13 @@ ul {
 }
 
 .skill_list {
+  p{
+    font-weight: bold;
+  }
   li {
     display: inline-block;
     width: 100px;
+    margin-right: 5px;
     text-align: center;
   }
 }
