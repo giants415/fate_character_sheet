@@ -42,11 +42,13 @@ ul {
   p{
     font-weight: bold;
   }
-  li {
-    display: inline-block;
-    width: 100px;
-    margin-right: 5px;
-    text-align: center;
+  ul {
+    display: flex;
+    li {
+      width: 100px;
+      margin-right: 5px;
+      text-align: center;
+    }
   }
 }
 
