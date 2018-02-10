@@ -29,6 +29,15 @@ ul {
   margin-top: 20px;
 }
 
+.aspect_list {
+  ul{
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
 .skill_list {
   p{
     font-weight: bold;
