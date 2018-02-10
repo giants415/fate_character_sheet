@@ -8,8 +8,10 @@ p {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
   li{
-    margin: 5px;
+    margin-bottom: 5px;
     border: 2px solid black;
   }
 }
@@ -29,9 +31,6 @@ ul {
 }
 
 .skill_list {
-  li{
-    display: inline-block;
-  }
 }
 
 #refresh_input {
