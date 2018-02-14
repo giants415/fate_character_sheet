@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
 
-const textArea = {
-  width: '500px',
-  height: '100px'
-}
-
 class Description extends Component {
   constructor(props){
     super(props);
@@ -17,7 +12,7 @@ class Description extends Component {
         <p>Description</p>
         <textarea
           type='text'
-          style={textArea}
+          className='text_box'
           placeholder='Describe your chracter'
           value={this.state.description}
           onChange={event => this.onInputChange(event.target.value)}
