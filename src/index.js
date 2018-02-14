@@ -10,7 +10,7 @@ import Notes from './components/notes';
 import StressList from './components/stress_list';
 import ConsequenceList from './components/consequence_list';
 
-import { target } from './style.scss';
+import './style.scss';
 
 
 class App extends Component {
