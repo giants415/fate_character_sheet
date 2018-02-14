@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 
-const nameStyle = {
-  width: '500px'
-}
-
 class Name extends Component {
   constructor(props){
     super(props);
@@ -15,7 +11,7 @@ class Name extends Component {
       <div className="col-8">
         <p>Name</p>
         <input
-          style={nameStyle}
+          className='name'
           placeholder='Choose your character&#39;s name'
           value={this.state.name}
           onChange={event => this.onInputChange(event.target.value)}
