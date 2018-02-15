@@ -68,6 +68,18 @@ ul {
   width: 500px;
 }
 
+.stress_box {
+  display: flex;
+  justify-content: space-around;
+  p {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    text-align: center;
+    border: .5px black solid;
+  }
+}
+
 #refresh_input {
   height: 136px;
   width: 136px;
