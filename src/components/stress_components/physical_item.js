@@ -2,13 +2,11 @@ import React from 'react';
 
 const PhysicalStressItems = ({physical}) => {
   return (
-    <div>
-      <p>Physical Stress</p>
       <div className='stress_box'>
+        <h6>Physical Stress</h6>
         <p>{physical[0]}</p>
         <p>{physical[1]}</p>
-      </div>
-    </div>
+      </div>  
   )
 };
 
