@@ -8,7 +8,16 @@ class StressBox extends Component {
   }
 
   onClick(event) {
-    this.setState ({ active: })
+    this.setState(prevState => ({
+      check: !prevState.check
+    }));
+  }
+
+  render(){
+    return (
+      <div>
+      </div>
+    );
   }
 }
 
