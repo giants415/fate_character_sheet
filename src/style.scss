@@ -76,9 +76,8 @@ ul {
 }
 
 .stress_box {
-  // display: flex;
-  // justify-content: space-between;
   div {
+    display: inline-block;
     height: 30px;
     width: 30px;
     background-color: white;
