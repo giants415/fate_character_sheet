@@ -1,23 +1,23 @@
 import React, {Component} from 'react';
 
 class StressBox extends Component {
-  construtor() {
+  construtor(props) {
     this.state = { active: false };
+
+    this.onClick = this.onClick.bind(this);
   }
 
   onClick(event) {
-    this.setState(prevState => ({
-      check: !prevState.check
-    }));
+    this.setState({ active: !this.state.active });
   }
 
   render(){
     return (
       <div>
-        <div>
+        <div onClick={this.onClick}>
         </div>
 
-        <div>
+        <div onClick={this.onClick}>
         </div>
       </div>
     );
