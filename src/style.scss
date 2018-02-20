@@ -81,7 +81,7 @@ ul {
 
 .stress_box > div{
   div {
-
+    @include button;
     display: inline-block;
     height: 30px;
     width: 30px;
