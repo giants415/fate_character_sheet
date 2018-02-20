@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 
 class StressBox extends Component {
-  construtor(props) {
-    super(props);
-
+  construtor() {
     this.state = { active: false };
   }
 
@@ -16,12 +14,15 @@ class StressBox extends Component {
   render(){
     return (
       <div>
-      </div>
+        <div>
+        </div>
 
-      <div>
+        <div>
+        </div>
       </div>
     );
   }
+
 }
 
 export default StressBox;
