@@ -1,4 +1,5 @@
 import React from 'react';
+import StressBox from './stress_box';
 
 const PhysicalStressItems = ({physical}) => {
   return (
