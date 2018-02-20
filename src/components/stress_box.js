@@ -4,7 +4,11 @@ class StressBox extends Component {
   construtor(props) {
     super(props);
 
-    this.state = { active: 0 };
+    this.state = { active: false };
+  }
+
+  onClick(event) {
+    this.setState ({ active: })
   }
 }
 
