@@ -9,8 +9,8 @@ class StressList extends Component {
   render(){
     return(
       <div>
-        <StressBox />
-        <StressBox />
+        <StressBox key={1} />
+        <StressBox key={2} />
       <div>
     )
   }
