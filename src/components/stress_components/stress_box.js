@@ -19,14 +19,8 @@ class StressBox extends Component {
 
   render(){
     return (
-      <div>
-        <div key={1} onClick={this.onClick}>
-          {this.state.display}
-        </div>
-
-        <div key={2} onClick={this.onClick}>
-          {this.state.display}
-        </div>
+      <div onClick={this.onClick}>
+        {this.state.display}
       </div>
     );
   }
