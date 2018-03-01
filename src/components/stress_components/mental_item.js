@@ -1,11 +1,11 @@
 import React from 'react';
-import StressBox from './stress_box';
+import StressBoxList from '../stress_box_list';
 
 const MentalStressItems = ({mental}) => {
   return (
     <div className='stress_box'>
       <span>Mental Stress</span>
-      <StressBox />
+      <StressBoxList />
     </div>
   )
 };
