@@ -1,7 +1,7 @@
 import React from 'react';
 import StressBox from './stress_components/stress_box';
 
-const StressList = () => {
+const StressBoxList = () => {
   return(
     <div>
       <StressBox key={1}/>
@@ -11,4 +11,4 @@ const StressList = () => {
 };
 
 
-export default StressList;
+export default StressBoxList;
