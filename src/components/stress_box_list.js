@@ -6,7 +6,7 @@ const StressBoxList = () => {
     <div>
       <StressBox key={1}/>
       <StressBox key={2}/>
-    <div>
+    </div>
   )
 };
 
