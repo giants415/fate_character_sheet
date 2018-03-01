@@ -13,7 +13,11 @@ class StressBox extends Component {
   }
 
   onClick(event) {
-    this.setState({ display: 'X' });
+    if (this.state.active == false) {
+      this.setState({ active: true, display: 'X' });
+    } else {
+      this.setState({ active: false, display: ''});
+    }
     console.log(this.state);
   }
 
