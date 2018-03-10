@@ -12,27 +12,6 @@ import ConsequenceList from './components/consequence_list';
 
 import './style.scss';
 
-let allSkills = [
-  'athletics',
-  'burglary',
-  'contacts',
-  'crafts',
-  'deceive',
-  'drive',
-  'empathy',
-  'fight',
-  'investigate',
-  'lore',
-  'notice',
-  'physique',
-  'provoke',
-  'rapport',
-  'resources',
-  'shoot',
-  'stealth',
-  'will'
-];
-
 
 class App extends Component {
   constructor(props){
