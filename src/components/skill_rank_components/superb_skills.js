@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SuperbSkills = () => {
+const SuperbSkills = () => {  
   return (
     <div>
       <p>Superb ( +5 )</p>
