@@ -8,10 +8,11 @@ import SkillBox from './skill_box';
 //track of value of skills when in use, just if they have been used or not
 
 class SkillList extends Component {
-  constructor(props){
-    super(props);
+  constructor(skills){
+    super(skills);
     
-    this.state = props;
+    this.state = skills;
+    
     console.log(this.state.skills);
   }  
   
