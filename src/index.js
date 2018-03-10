@@ -27,7 +27,7 @@ class App extends Component {
 
         <div className="row aspects_skills">
           <AspectList myAspects={this.state.characterSheet.aspectList}/>
-          <SkillList mySkills={this.state.characterSheet.skillList}/>
+          <SkillList skills={this.state.characterSheet.skillList}/>
         </div>
 
         <div className="row">
