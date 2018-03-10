@@ -55,18 +55,15 @@ ul {
 }
 
 .skill_list {
-  p{
+  p {
     font-weight: bold;
   }
-  ul {
-    display: flex;
-    li {
-      width: 100px;
-      margin-right: 5px;
-      text-align: center;
-      vertical-align: middle;
-      line-height: 37px;
-    }
+  div {
+    width: 100px;
+    margin-right: 5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 37px;
   }
 }
 
