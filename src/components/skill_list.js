@@ -7,6 +7,11 @@ import FairSkills from './skill_rank_components/fair_skills';
 import AverageSkills from './skill_rank_components/average_skills';
 
 
+//may be necessary to remove individual skill rank components and instead
+//create a single skill box, similar to the stress box, that will display a chosen skill
+//all formatting for skill "Values" can be done as visual descriptors since app won't keep
+//track of value of skills when in use, just if they have been used or not
+
 class SkillList extends Component {
   constructor(mySkills){
     super(mySkills);
