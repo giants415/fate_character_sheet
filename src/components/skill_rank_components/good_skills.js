@@ -1,15 +1,15 @@
 import React from 'react';
 
-const GoodSkills = ({goodSkills}) => {
+const GoodSkills = () => {
   return (
     <div>
       <p>Good ( +3 )</p>
       <ul>
-        <li>{goodSkills[0]}</li>
-        <li>{goodSkills[1]}</li>
-        <li>{goodSkills[2]}</li>
-        <li>{goodSkills[3]}</li>
-        <li>{goodSkills[4]}</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
       </ul>
     </div>
   );
