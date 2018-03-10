@@ -55,16 +55,29 @@ ul {
 }
 
 .skill_list {
-  p {
+  p{
     font-weight: bold;
   }
-  div {
-    width: 100px;
-    margin-right: 5px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 37px;
+  ul {
+    display: flex;
+    li {
+      width: 100px;
+      margin-right: 5px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 37px;
+    }
   }
+}
+
+.skill_box {
+  @include button;
+  width: 100px;
+  margin-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 37px;
+  border-radius: 5px;
 }
 
 .text_box {
