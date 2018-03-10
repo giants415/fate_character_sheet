@@ -8,17 +8,18 @@ import SkillBox from './skill_box';
 //track of value of skills when in use, just if they have been used or not
 
 class SkillList extends Component {
-  constructor(mySkills){
-    super(mySkills);
+  constructor(props){
+    super(props);
     
-    this.state = mySkills;
+    this.state = props;
+    console.log(this.state.skills);
   }  
   
   render(){
     return (
       <div className="col-lg-6 skill_list">
         <h3>Skills</h3>
-          <SkillBox />
+          <SkillBox availableSkills={this.state.skills}/>
       </div>
     );
   }
