@@ -8,15 +8,22 @@ import AverageSkills from './skill_rank_components/average_skills';
 
 
 class SkillList extends Component {
+  constructor(mySkills){
+    super(mySkills);
+    
+    this.state = mySkills;
+    console.log(this.state.mySkills);
+  }  
+  
   render(){
     return (
       <div className="col-lg-6 skill_list">
         <h3>Skills</h3>
-        <SuperbSkills superbSkills={mySkills.superb}/>
-        <GreatSkills greatSkills={mySkills.great}/>
-        <GoodSkills goodSkills={mySkills.good}/>
-        <FairSkills fairSkills={mySkills.fair}/>
-        <AverageSkills AverageSkills={mySkills.average}/>
+        <SuperbSkills/>
+        <GreatSkills/>
+        <GoodSkills/>
+        <FairSkills/>
+        <AverageSkills/>
       </div>
     );
   }
