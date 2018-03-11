@@ -7,15 +7,17 @@ class SkillBox extends Component {
   constructor(props) {
     super(props);
 
-    this.state = props;
+    this.state = {
+      skills: props.availableSkills
+    };
 
     this.toggleExpand = this.toggleExpand.bind(this);
 
-    console.log(props.availableSkills);
+    console.log(this.state.skills);
   }
 
   renderList() {
-    return this.props.availableSkills.map((skill) => {
+    return this.props.skills.map((skill) => {
       return (
         <a className="dropdown-item" key={skill} href="#">
           {skill}
@@ -24,6 +26,9 @@ class SkillBox extends Component {
     });
   }
 
+  toggleExpand() {
+
+  }
 
 
   render(){
@@ -40,7 +45,7 @@ class SkillBox extends Component {
         Skills
         </button>
         <div className="dropdown-menu" aria-labelledby="dropdownControl">
-          {this.renderList()}
+          // {this.renderList()}
         </div>
       </div>
     );
