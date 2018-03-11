@@ -15,26 +15,28 @@ class SkillBox extends Component {
   renderList() {
     return this.props.availableSkills.map((skill) => {
       return (
-        <li key={skill}>
+        <a className="dropdown-item" key={skill} href="#">
           {skill}
-        </li>
+        </a>
       )
     });
   }
 
   render(){
     return(
-      <div className="skill_box dropdown">
+      <div className="dropdown">
         <button
-        className="dropdownControl btn btn-secondary dropdown-toggle"
+        className="dropdownControl skill_box dropdown-toggle"
         type="button"
-        dataToggle="dropdown"
-        ariaHaspopup="true"
-        ariaExpanded="false"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
         >
         Skills
         </button>
-        {this.renderList()}
+        <div className="dropdown-menu" aria-labelledby="dropdownControl">
+          {this.renderList()}
+        </div>
       </div>
     );
   }
