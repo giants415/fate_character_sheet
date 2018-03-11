@@ -24,9 +24,18 @@ class SkillBox extends Component {
 
   render(){
     return(
-      <ul className="skill_box">
+      <div className="skill_box dropdown">
+        <button
+        className="dropdownControl btn btn-secondary dropdown-toggle"
+        type="button"
+        dataToggle="dropdown"
+        ariaHaspopup="true"
+        ariaExpanded="false"
+        >
+        Skills
+        </button>
         {this.renderList()}
-      </ul>
+      </div>
     );
   }
 }
