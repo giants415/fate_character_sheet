@@ -14,7 +14,7 @@ class SkillBox extends Component {
 
   render(){
     return(
-      <div className="skill_box">
+      <div className="skill_box" dataToggle="collapse" href="#collapseExample" ariaExpanded="false" ariaControls="collapseExample">
         <span>test</span>
       </div>
     );
