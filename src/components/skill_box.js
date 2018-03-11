@@ -17,7 +17,7 @@ class SkillBox extends Component {
   }
 
   renderList() {
-    return this.props.skills.map((skill) => {
+    return this.state.skills.map((skill) => {
       return (
         <a className="dropdown-item" key={skill} href="#">
           {skill}
