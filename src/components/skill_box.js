@@ -9,6 +9,8 @@ class SkillBox extends Component {
 
     this.state = props;
 
+    this.toggleExpand = this.toggleExpand.bind(this);
+
     console.log(props.availableSkills);
   }
 
@@ -22,6 +24,8 @@ class SkillBox extends Component {
     });
   }
 
+
+
   render(){
     return(
       <div className="dropdown">
@@ -31,6 +35,7 @@ class SkillBox extends Component {
         data-toggle="dropdown"
         aria-haspopup="true"
         aria-expanded="false"
+        onClick={this.toggleExpand}
         >
         Skills
         </button>
