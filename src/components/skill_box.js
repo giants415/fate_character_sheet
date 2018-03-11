@@ -9,14 +9,24 @@ class SkillBox extends Component {
 
     this.state = props;
 
-    console.log(this.state.availableSkills);
+    console.log(props.availableSkills);
+  }
+
+  renderList() {
+    return this.props.availableSkills.map((skill) => {
+      return (
+        <li key={skill}>
+          {skill}
+        </li>
+      )
+    });
   }
 
   render(){
     return(
-      <div className="skill_box">
-        <span>test</span>
-      </div>
+      <ul className="skill_box">
+        {this.renderList()}
+      </ul>
     );
   }
 }
