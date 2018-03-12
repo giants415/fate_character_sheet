@@ -39,12 +39,6 @@ class SkillBox extends Component {
   }
 
   selectSkill(e) {
-    console.log('select skill fired');
-    // V this returns a string V
-    console.log(e.target.textContent);
-    // V accesses array of available skills V
-    console.log(this.state.skills);
-
     const skillArr = this.state.skills;
     let selectedSkill = e.target.textContent;
 
@@ -54,8 +48,6 @@ class SkillBox extends Component {
       displayedText: selectedSkill,
       skills: skillArr
     });
-
-    console.log(this.state.skills);
   }
 
 
