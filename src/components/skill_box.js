@@ -8,10 +8,11 @@ class SkillBox extends Component {
     super(props);
 
     this.state = {
-      skills: props.availableSkills
+      skills: props.availableSkills,
+      showList: false
     };
 
-    this.toggleExpand = this.toggleExpand.bind(this);
+    this.toggleShowList = this.toggleShowList.bind(this);
 
     console.log(this.state.skills);
   }
@@ -26,14 +27,14 @@ class SkillBox extends Component {
     });
   }
 
-  toggleExpand() {
+  toggleShowList() {
 
   }
 
 
   render(){
     return(
-      <div className="dropdown">
+      <div className='dropdown'>
         <button
         className="dropdownControl skill_box dropdown-toggle"
         type="button"
