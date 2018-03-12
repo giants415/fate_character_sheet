@@ -9,6 +9,9 @@ class SkillBox extends Component {
 
     this.state = {
       skills: props.availableSkills,
+      dropdownDiv: 'dropdown',
+      btnAriaExpanded: 'false',
+      dropdownMenu: 'dropdown-menu',
       showList: false
     };
 
@@ -26,25 +29,41 @@ class SkillBox extends Component {
   }
 
   toggleShowList() {
-
+    if(this.state.showList == false) {
+      console.log('a new look');
+      this.setState({
+        showList: true,
+        dropdownDiv: 'dropdown show',
+        btnAriaExpanded: 'true',
+        dropdownMenu: 'dropdown-menu show',
+      });
+    } else {
+      console.log('back to start');
+      this.setState({
+        showList: false,
+        dropdownDiv: 'dropdown',
+        btnAriaExpanded: 'false',
+        dropdownMenu: 'dropdown-menu',
+      });
+    }
   }
 
 
   render(){
     return(
-      <div className='dropdown'>
+      <div className={this.state.dropdownDiv}>
         <button
         className="dropdownControl skill_box dropdown-toggle"
         type="button"
         data-toggle="dropdown"
         aria-haspopup="true"
-        aria-expanded="false"
-        onClick={this.toggleExpand}
+        aria-expanded={this.state.btnAriaExpanded}
+        onClick={this.toggleShowList}
         >
         Skills
         </button>
-        <div className="dropdown-menu" aria-labelledby="dropdownControl">
-          // {this.renderList()}
+        <div className={this.state.dropdownMenu} aria-labelledby="dropdownControl" x-placement="bottom-start">
+          {this.renderList()}
         </div>
       </div>
     );
