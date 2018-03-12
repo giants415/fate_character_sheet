@@ -39,6 +39,7 @@ class SkillBox extends Component {
 
   selectSkill(e) {
     console.log('select skill fired');
+    // V this returns a string V
     console.log(e.target.textContent);
   }
 
