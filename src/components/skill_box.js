@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 //need to use bootstrap to create a list that expands on click to show all available skills
 //after selecting skill, box collapses and selected skill stays
@@ -8,18 +7,13 @@ class SkillBox extends Component {
   constructor(props) {
     super(props);
 
-    this.toggle = this.toggle.bind(this);
-
     this.state = {
-      skills: props.availableSkills,
-      dropdownOpen: false
+      skills: props.availableSkills
     };
-  }
 
-  toggle() {
-    this.setState({
-      dropdownOpen: !this.state.dropdownOpen
-    });
+    this.toggleExpand = this.toggleExpand.bind(this);
+
+    console.log(this.state.skills);
   }
 
   renderList() {
@@ -32,6 +26,9 @@ class SkillBox extends Component {
     });
   }
 
+  toggleExpand() {
+
+  }
 
 
   render(){
@@ -43,6 +40,7 @@ class SkillBox extends Component {
         data-toggle="dropdown"
         aria-haspopup="true"
         aria-expanded="false"
+        onClick={this.toggleExpand}
         >
         Skills
         </button>
