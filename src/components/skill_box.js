@@ -13,8 +13,6 @@ class SkillBox extends Component {
     };
 
     this.toggleShowList = this.toggleShowList.bind(this);
-
-    console.log(this.state.skills);
   }
 
   renderList() {
