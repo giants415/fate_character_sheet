@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
 //need to use bootstrap to create a list that expands on click to show all available skills
 //after selecting skill, box collapses and selected skill stays
