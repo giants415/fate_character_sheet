@@ -23,31 +23,20 @@ class SkillBox extends Component {
   renderList() {
     return this.state.skills.map((skill) => {
       return (
-        <a className="dropdown-item" key={skill} onClick={this.selectSkill} href="#">
+        <span className="dropdown-item" key={skill} onClick={this.selectSkill}>
           {skill}
-        </a>
+        </span>
       )
     });
   }
 
   toggleShowList() {
-    if(this.state.showList == false) {
-      console.log('a new look');
-      this.setState({
-        showList: true,
-        dropdownDiv: 'dropdown show',
-        btnAriaExpanded: 'true',
-        dropdownMenu: 'dropdown-menu show'
-      });
-    } else {
-      console.log('back to start');
-      this.setState({
-        showList: false,
-        dropdownDiv: 'dropdown',
-        btnAriaExpanded: 'false',
-        dropdownMenu: 'dropdown-menu'
-      });
-    }
+    this.setState({
+      showList: true,
+      dropdownDiv: 'dropdown show',
+      btnAriaExpanded: 'true',
+      dropdownMenu: 'dropdown-menu show'
+    });
   }
 
   selectSkill() {
