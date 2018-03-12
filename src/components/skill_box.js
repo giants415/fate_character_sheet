@@ -35,7 +35,7 @@ class SkillBox extends Component {
         showList: true,
         dropdownDiv: 'dropdown show',
         btnAriaExpanded: 'true',
-        dropdownMenu: 'dropdown-menu show',
+        dropdownMenu: 'dropdown-menu show'
       });
     } else {
       console.log('back to start');
@@ -43,7 +43,7 @@ class SkillBox extends Component {
         showList: false,
         dropdownDiv: 'dropdown',
         btnAriaExpanded: 'false',
-        dropdownMenu: 'dropdown-menu',
+        dropdownMenu: 'dropdown-menu'
       });
     }
   }
