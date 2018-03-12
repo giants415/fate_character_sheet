@@ -41,6 +41,8 @@ class SkillBox extends Component {
     console.log('select skill fired');
     // V this returns a string V
     console.log(e.target.textContent);
+    // V accesses array of available skills V
+    console.log(this.state.skills);
   }
 
 
