@@ -9,6 +9,7 @@ class SkillBox extends Component {
 
     this.state = {
       skills: props.availableSkills,
+      displayedText: 'Skills',
       dropdownDiv: 'dropdown',
       btnAriaExpanded: 'false',
       dropdownMenu: 'dropdown-menu'
@@ -50,8 +51,9 @@ class SkillBox extends Component {
     skillArr.splice(selectedSkill, 1);
 
     this.setState({
+      displayedText: selectedSkill,
       skills: skillArr
-    })
+    });
 
     console.log(this.state.skills);
   }
@@ -68,7 +70,7 @@ class SkillBox extends Component {
         aria-expanded={this.state.btnAriaExpanded}
         onClick={this.toggleShowList}
         >
-        Skills
+        {this.state.displayedText}
         </button>
         <div className={this.state.dropdownMenu} aria-labelledby="dropdownControl" x-placement="bottom-start">
           {this.renderList()}
