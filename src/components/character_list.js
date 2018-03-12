@@ -8,7 +8,7 @@ export default class CharacterList extends Component {
   render() {
     return (
       <div className="row">
-        <h3>Character</h3>
+        <h3 className="col-lg-12">Character</h3>
         <div className='col-lg-9'>
           <Name />
           <Description />
