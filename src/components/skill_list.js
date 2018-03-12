@@ -12,8 +12,6 @@ class SkillList extends Component {
     super(skills);
     
     this.state = skills;
-    
-    console.log(this.state.skills);
   }  
   
   render(){
