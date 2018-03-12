@@ -47,7 +47,13 @@ class SkillBox extends Component {
     const skillArr = this.state.skills;
     let selectedSkill = e.target.textContent;
 
-    console.log('found at index value ' + skillArr.indexOf(selectedSkill));
+    skillArr.splice(selectedSkill, 1);
+
+    this.setState({
+      skills: skillArr
+    })
+
+    console.log(this.state.skills);
   }
 
 
