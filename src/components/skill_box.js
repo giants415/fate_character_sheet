@@ -11,8 +11,7 @@ class SkillBox extends Component {
       skills: props.availableSkills,
       dropdownDiv: 'dropdown',
       btnAriaExpanded: 'false',
-      dropdownMenu: 'dropdown-menu',
-      showList: false
+      dropdownMenu: 'dropdown-menu'
     };
 
     this.toggleShowList = this.toggleShowList.bind(this);
@@ -32,7 +31,6 @@ class SkillBox extends Component {
 
   toggleShowList() {
     this.setState({
-      showList: true,
       dropdownDiv: 'dropdown show',
       btnAriaExpanded: 'true',
       dropdownMenu: 'dropdown-menu show'
