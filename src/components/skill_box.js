@@ -16,12 +16,14 @@ class SkillBox extends Component {
     };
 
     this.toggleShowList = this.toggleShowList.bind(this);
+
+    this.selectSkill = this.selectSkill.bind(this);
   }
 
   renderList() {
     return this.state.skills.map((skill) => {
       return (
-        <a className="dropdown-item" key={skill} href="#">
+        <a className="dropdown-item" key={skill} onClick={this.selectSkill} href="#">
           {skill}
         </a>
       )
@@ -46,6 +48,10 @@ class SkillBox extends Component {
         dropdownMenu: 'dropdown-menu'
       });
     }
+  }
+
+  selectSkill() {
+    console.log('select skill fired');
   }
 
 
