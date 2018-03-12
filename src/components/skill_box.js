@@ -8,13 +8,18 @@ class SkillBox extends Component {
   constructor(props) {
     super(props);
 
+    this.toggle = this.toggle.bind(this);
+
     this.state = {
-      skills: props.availableSkills
+      skills: props.availableSkills,
+      dropdownOpen: false
     };
+  }
 
-    this.toggleExpand = this.toggleExpand.bind(this);
-
-    console.log(this.state.skills);
+  toggle() {
+    this.setState({
+      dropdownOpen: !this.state.dropdownOpen
+    });
   }
 
   renderList() {
@@ -27,9 +32,6 @@ class SkillBox extends Component {
     });
   }
 
-  toggleExpand() {
-
-  }
 
 
   render(){
@@ -41,7 +43,6 @@ class SkillBox extends Component {
         data-toggle="dropdown"
         aria-haspopup="true"
         aria-expanded="false"
-        onClick={this.toggleExpand}
         >
         Skills
         </button>
