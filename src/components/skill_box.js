@@ -43,6 +43,11 @@ class SkillBox extends Component {
     console.log(e.target.textContent);
     // V accesses array of available skills V
     console.log(this.state.skills);
+
+    const skillArr = this.state.skills;
+    let selectedSkill = e.target.textContent;
+
+    console.log('found at index value ' + skillArr.indexOf(selectedSkill));
   }
 
 
