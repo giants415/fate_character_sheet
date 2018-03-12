@@ -7,18 +7,62 @@ import SkillBox from './skill_box';
 //all formatting for skill "Values" can be done as visual descriptors since app won't keep
 //track of value of skills when in use, just if they have been used or not
 
+
+const skillListStyle = {
+  display: 'flex'
+}
+
 class SkillList extends Component {
   constructor(skills){
     super(skills);
     
     this.state = skills;
   }  
-  
+
   render(){
     return (
       <div className="col-lg-6 skill_list">
         <h3>Skills</h3>
+        <div className="col-lg-6" style={skillListStyle}>
+          <p>+5</p>
           <SkillBox availableSkills={this.state.skills}/>
+          <SkillBox availableSkills={this.state.skills}/>
+          <SkillBox availableSkills={this.state.skills}/>
+          <SkillBox availableSkills={this.state.skills}/>
+          <SkillBox availableSkills={this.state.skills}/>
+        </div>
+        <div className="col-lg-6" style={skillListStyle}>
+          <p>+4</p>
+          <SkillBox availableSkills={this.state.skills}/>
+          <SkillBox availableSkills={this.state.skills}/>
+          <SkillBox availableSkills={this.state.skills}/>
+          <SkillBox availableSkills={this.state.skills}/>
+          <SkillBox availableSkills={this.state.skills}/>
+        </div>
+        <div className="col-lg-6" style={skillListStyle}>
+          <p>+3</p>
+          <SkillBox availableSkills={this.state.skills}/>
+          <SkillBox availableSkills={this.state.skills}/>
+          <SkillBox availableSkills={this.state.skills}/>
+          <SkillBox availableSkills={this.state.skills}/>
+          <SkillBox availableSkills={this.state.skills}/>
+        </div>
+        <div className="col-lg-6" style={skillListStyle}>
+          <p>+2</p>
+          <SkillBox availableSkills={this.state.skills}/>
+          <SkillBox availableSkills={this.state.skills}/>
+          <SkillBox availableSkills={this.state.skills}/>
+          <SkillBox availableSkills={this.state.skills}/>
+          <SkillBox availableSkills={this.state.skills}/>
+        </div>
+        <div className="col-lg-6" style={skillListStyle}>
+          <p>+1</p>
+          <SkillBox availableSkills={this.state.skills}/>
+          <SkillBox availableSkills={this.state.skills}/>
+          <SkillBox availableSkills={this.state.skills}/>
+          <SkillBox availableSkills={this.state.skills}/>
+          <SkillBox availableSkills={this.state.skills}/>
+        </div>
       </div>
     );
   }
