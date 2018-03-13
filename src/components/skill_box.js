@@ -38,6 +38,9 @@ class SkillBox extends Component {
     });
   }
 
+
+//FUTURE STEP: Need to create check controls to ensure that skills are added/removed when appropriate
+//CURRENTLY: Skills can be selected multiple times, aren't returned to the containing array
   selectSkill(e) {
     const skillArr = this.state.skills;
     let selectedSkill = e.target.textContent;
