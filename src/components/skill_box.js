@@ -42,12 +42,23 @@ class SkillBox extends Component {
     const skillArr = this.state.skills;
     let selectedSkill = e.target.textContent;
 
-    skillArr.splice(selectedSkill, 1);
+    if (this.state.displayedText == 'Skills') {
+      //removes selected skill from array and sets State
+      skillArr.splice(selectedSkill, 1);
 
-    this.setState({
-      displayedText: selectedSkill,
-      skills: skillArr
-    });
+      this.setState({
+        displayedText: selectedSkill,
+        skills: skillArr
+      });
+    } else {
+      // by clicking on any other element in the skill list dropdown, the box is reset to say Skills
+      // and the previously selected skill is placed at the bottom of the skill array
+      skillArr.push(this.state.displayedText);
+      this.setState({
+        displayedText: 'Skills',
+        skills: skillArr
+      });
+    }
   }
 
 
