@@ -51,15 +51,15 @@ class SkillBox extends Component {
       skillArr.splice(skillArr.indexOf(selectedSkill), 1);
 
       //checks for presence of reset skill to avoid duplication
-      if (skillArr.indexOf('RESET SKILL') === -1){
-        skillArr.unshift('RESET SKILL');
+      if (skillArr.indexOf('CLEAR SKILL') === -1){
+        skillArr.unshift('CLEAR SKILL');
       }
 
       this.setState({
         displayedText: selectedSkill,
         skills: skillArr
       });
-    } else if (selectedSkill == 'RESET SKILL') {
+    } else if (selectedSkill == 'CLEAR SKILL') {
       skillArr.push(currentDisplay);
       this.setState({
         displayedText: 'Skills',
