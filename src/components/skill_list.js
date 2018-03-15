@@ -18,7 +18,7 @@ class SkillList extends Component {
     return (
       <div className="col-lg-6 skill_list">
         <h3>Skills</h3>
-        <div className="col-lg-6">
+        <div key={5} className="col-lg-6">
           <p>+5</p>
           <SkillBox availableSkills={this.state.skills}/>
           <SkillBox availableSkills={this.state.skills}/>
@@ -26,7 +26,7 @@ class SkillList extends Component {
           <SkillBox availableSkills={this.state.skills}/>
           <SkillBox availableSkills={this.state.skills}/>
         </div>
-        <div className="col-lg-6">
+        <div key={4} className="col-lg-6">
           <p>+4</p>
           <SkillBox availableSkills={this.state.skills}/>
           <SkillBox availableSkills={this.state.skills}/>
@@ -34,7 +34,7 @@ class SkillList extends Component {
           <SkillBox availableSkills={this.state.skills}/>
           <SkillBox availableSkills={this.state.skills}/>
         </div>
-        <div className="col-lg-6">
+        <div key={3} className="col-lg-6">
           <p>+3</p>
           <SkillBox availableSkills={this.state.skills}/>
           <SkillBox availableSkills={this.state.skills}/>
@@ -42,7 +42,7 @@ class SkillList extends Component {
           <SkillBox availableSkills={this.state.skills}/>
           <SkillBox availableSkills={this.state.skills}/>
         </div>
-        <div className="col-lg-6">
+        <div key={2} className="col-lg-6">
           <p>+2</p>
           <SkillBox availableSkills={this.state.skills}/>
           <SkillBox availableSkills={this.state.skills}/>
@@ -50,7 +50,7 @@ class SkillList extends Component {
           <SkillBox availableSkills={this.state.skills}/>
           <SkillBox availableSkills={this.state.skills}/>
         </div>
-        <div className="col-lg-6">
+        <div key={1} className="col-lg-6">
           <p>+1</p>
           <SkillBox availableSkills={this.state.skills}/>
           <SkillBox availableSkills={this.state.skills}/>
