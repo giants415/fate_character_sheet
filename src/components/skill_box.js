@@ -61,6 +61,7 @@ class SkillBox extends Component {
       });
     } else if (selectedSkill == 'CLEAR SKILL') {
       skillArr.push(currentDisplay);
+      skillArr.splice(skillArr.indexOf(selectedSkill), 1);
       this.setState({
         displayedText: 'Skills',
         skills: skillArr
