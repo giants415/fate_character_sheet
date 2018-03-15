@@ -26,6 +26,10 @@ ul {
   }
 }
 
+.dropdown-menu.show{
+  transform: translate3d(0px, 42px, 0px) !important;
+}
+
 .target {
   padding: 30px;
 }
@@ -68,6 +72,19 @@ ul {
       line-height: 37px;
     }
   }
+  .col-lg-6 {
+    display: flex;
+  }
+}
+
+.skill_box {
+  @include button;
+  width: 100px;
+  margin-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 37px;
+  border-radius: 5px;
 }
 
 .text_box {
