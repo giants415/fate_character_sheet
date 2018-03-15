@@ -44,6 +44,7 @@ class SkillBox extends Component {
   selectSkill(e) {
     const skillArr = this.state.skills;
     let selectedSkill = e.target.textContent;
+    let displayedSkill = this.state.displayedText;
 
     if (this.state.displayedText == 'Skills') {
       //removes selected skill from array and sets State
@@ -54,6 +55,8 @@ class SkillBox extends Component {
         displayedText: selectedSkill,
         skills: skillArr
       });
+    } elseif (selectSkill == 'RESET SKILL') {
+      console.log()
     } else {
       let prevSkill = this.state.displayedText;
       let newSkill = selectedSkill;
