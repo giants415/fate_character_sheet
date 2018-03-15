@@ -48,14 +48,21 @@ class SkillBox extends Component {
     if (this.state.displayedText == 'Skills') {
       //removes selected skill from array and sets State
       skillArr.splice(selectedSkill, 1);
+      skillArr.unshift('RESET SKILL');
 
       this.setState({
         displayedText: selectedSkill,
         skills: skillArr
       });
     } else {
+      let prevSkill = this.state.displayedText;
       // by clicking on any other element in the skill list dropdown, the box is reset to say Skills
       // and the previously selected skill is placed at the bottom of the skill array
+      skillArr.forEach(function(skillArr) {
+        // if (prevSkill == skillArr) {
+          console.log(skillArr);
+        // }
+      });
       skillArr.push(this.state.displayedText);
       this.setState({
         displayedText: 'Skills',
