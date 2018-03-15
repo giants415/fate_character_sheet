@@ -55,8 +55,12 @@ class SkillBox extends Component {
         displayedText: selectedSkill,
         skills: skillArr
       });
-    } elseif (selectSkill == 'RESET SKILL') {
-      console.log()
+    } else if (selectedSkill == 'RESET SKILL') {
+      skillArr.push(displayedSkill);
+      this.setState({
+        displayedText: 'Skills',
+        skills: skillArr
+      });
     } else {
       let prevSkill = this.state.displayedText;
       let newSkill = selectedSkill;
