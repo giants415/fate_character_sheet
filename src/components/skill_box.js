@@ -44,9 +44,9 @@ class SkillBox extends Component {
   selectSkill(e) {
     const skillArr = this.state.skills;
     let selectedSkill = e.target.textContent;
-    let displayedSkill = this.state.displayedText;
+    let currentDisplay = this.state.displayedText;
 
-    if (this.state.displayedText == 'Skills') {
+    if (currentDisplay == 'Skills') {
       //removes selected skill from array and sets State
       skillArr.splice(selectedSkill, 1);
       skillArr.unshift('RESET SKILL');
@@ -56,13 +56,13 @@ class SkillBox extends Component {
         skills: skillArr
       });
     } else if (selectedSkill == 'RESET SKILL') {
-      skillArr.push(displayedSkill);
+      skillArr.push(currentDisplay);
       this.setState({
         displayedText: 'Skills',
         skills: skillArr
       });
     } else {
-      let prevSkill = this.state.displayedText;
+      let prevSkill = currentDisplay;
       let newSkill = selectedSkill;
       skillArr.push(prevSkill);
       this.setState({
