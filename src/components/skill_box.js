@@ -48,8 +48,12 @@ class SkillBox extends Component {
 
     if (currentDisplay == 'Skills') {
       //removes selected skill from array and sets State
-      skillArr.splice(selectedSkill, 1);
-      skillArr.unshift('RESET SKILL');
+      skillArr.splice(skillArr.indexOf(selectedSkill), 1);
+      
+      //checks for presence of reset skill to avoid duplication
+      if (skillArr.indexOf('RESET SKILL') === -1){
+        skillArr.unshift('RESET SKILL');
+      }
 
       this.setState({
         displayedText: selectedSkill,
