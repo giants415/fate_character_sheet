@@ -39,8 +39,8 @@ class SkillBox extends Component {
   }
 
 
-//FUTURE STEP: Need to create check controls to ensure that skills are added/removed when appropriate
-//CURRENTLY: Skills can be selected multiple times, aren't returned to the containing array
+//FUTURE STEP: instead of "RESET SKILL", skills that are spliced out should appear red/striked through
+//then, when users want to reset skill this styling can be undone and the previously unavailable skill can be chosen again
   selectSkill(e) {
     const skillArr = this.state.skills;
     let selectedSkill = e.target.textContent;
