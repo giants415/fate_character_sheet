@@ -56,16 +56,10 @@ class SkillBox extends Component {
       });
     } else {
       let prevSkill = this.state.displayedText;
-      // by clicking on any other element in the skill list dropdown, the box is reset to say Skills
-      // and the previously selected skill is placed at the bottom of the skill array
-      skillArr.forEach(function(skillArr) {
-        // if (prevSkill == skillArr) {
-          console.log(skillArr);
-        // }
-      });
-      skillArr.push(this.state.displayedText);
+      let newSkill = selectedSkill;
+      skillArr.push(prevSkill);
       this.setState({
-        displayedText: 'Skills',
+        displayedText: newSkill,
         skills: skillArr
       });
     }
