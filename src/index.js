@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import Character_0 from './Character_0';
+import Character_0 from './character_0';
 import CharacterList from './components/character_list';
 import AspectList from './components/aspect_list';
 import SkillList from './components/skill_list';
