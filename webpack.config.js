@@ -1,10 +1,7 @@
 var path = require('path');
 
 module.exports = {
-  entry: [
-    'webpack-dev-server/client?http://0.0.0.0:80',
-    path.resolve(__dirname, 'src') + '/index.js'
-  ],
+  entry: path.resolve(__dirname, 'src') + '/index.js',
   output: {
       path: path.resolve(__dirname, 'dist') + '/app',
       filename: 'bundle.js',
